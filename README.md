@@ -1,6 +1,6 @@
 # PHP & CSS3 Advent Calendar
 
-![Screenshot][/example/screenshot.png]
+![Screenshot][example/screenshot.png]
 
 ## Introduction
 

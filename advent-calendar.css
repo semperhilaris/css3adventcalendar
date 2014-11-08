@@ -1,0 +1,63 @@
+.advent-calendar {
+	position:relative;
+	margin: 0px auto;
+}
+.advent-calendar-entry {
+	position: absolute;
+	display: block;
+}
+.advent-calendar-door-left-wrapper, .advent-calendar-door-right-wrapper {
+	-moz-perspective: 400px;
+	-webkit-perspective: 400px;
+	-ms-perspective: 400px;
+	-o-perspective: 400px;
+	perspective: 400px;
+}
+.advent-calendar-door {
+	-webkit-transition:-webkit-transform 1s;
+    -moz-transition:-moz-transform 1s;
+    -o-transition: -o-transform 1s;
+    -ms-transition: -ms-transform 1s;
+    transition: transform 1s;
+}
+.advent-calendar-door-left-wrapper {
+	float: left;
+}
+.advent-calendar-door-right-wrapper {
+	float: right;
+}
+.advent-calendar-door-left-wrapper .advent-calendar-door {
+	-moz-transform-origin: 0% 50%;
+	-o-transform-origin: 0% 50%;
+	-webkit-transform-origin: 0% 50%;
+	transform-origin: 0% 50%;
+}
+.advent-calendar-door-right-wrapper .advent-calendar-door {
+	-moz-transform-origin: 100% 50%;
+	-o-transform-origin: 100% 50%;
+	-webkit-transform-origin: 100% 50%;
+	transform-origin: 100% 50%;
+}
+a.advent-calendar-entry:hover {
+	z-index: 99;
+}
+a.advent-calendar-entry:hover .advent-calendar-door-left-wrapper .advent-calendar-door {
+	-webkit-transform: rotateY(-70deg);
+    -moz-transform: rotateY(-70deg);
+    -ms-transform: rotateY(-70deg);
+    -o-transform: rotateY(-70deg);
+    transform: rotateY(-70deg);
+}
+a.advent-calendar-entry:hover .advent-calendar-door-right-wrapper .advent-calendar-door {
+	-webkit-transform: rotateY(70deg);
+    -moz-transform: rotateY(70deg);
+    -ms-transform: rotateY(70deg);
+    -o-transform: rotateY(70deg);
+    transform: rotateY(70deg);
+}
+.advent-calendar-background {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: -1;
+}
